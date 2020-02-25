@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<configuration doc:name="Configuration" doc:id="1ca817e1-aff3-4ed7-8916-d5effa02849a" defaultErrorHandler-ref="globalError_Handler" />
+	<error-handler name="globalError_Handler" doc:id="9f02c291-11ce-4407-af8c-4de511070936" >
+		<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="e15d5794-f903-4a54-8eee-9ac0148923d1" type="HTTP:TIMEOUT" >
+			<set-payload value="TIMEOUT Exceded" doc:name="Set Payload" doc:id="3221e16e-7701-4682-85af-830e9272e539" />
+		</on-error-continue>
+	</error-handler>
+</mule>
