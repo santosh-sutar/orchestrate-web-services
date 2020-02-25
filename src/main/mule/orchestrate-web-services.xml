@@ -104,7 +104,7 @@ ns ns0 http://training.mulesoft.com/
 			</ee:message>
 		</ee:transform>
 		<wsc:consume doc:name="Consume" doc:id="466799b5-2188-4df8-8fc1-b7aa2e7af370" config-ref="Web_Service_Consumer_Config" operation="GetTransactionsforCustomers"/>
-		<ee:transform doc:name="Transform Message" doc:id="05e13da0-a2a4-4c86-9e7c-89380de9da73" >
+		<ee:transform doc:name="Combile Account and transaction" doc:id="05e13da0-a2a4-4c86-9e7c-89380de9da73" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
