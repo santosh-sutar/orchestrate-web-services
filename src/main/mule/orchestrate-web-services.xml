@@ -25,7 +25,7 @@ http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/
 				<ee:set-payload ><![CDATA[%dw 2.0 
 output application/java
 var directorIDs = ["JKLS483S","FJSA48JD","NMA4FJ9K"] 
-
+//Orchestrate the data with directorID
 //Combines Accounts and Transactions by the Account ID. Assigns each account to a 
 //director 
 
